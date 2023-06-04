@@ -1,9 +1,9 @@
-import { Statistic } from './Statistic/Statistic';
-import { Section } from './Section/Section';
-import { Notification } from './Notification/Notification';
+import Statistic from './Statistic/Statistic';
+import Section from './Section/Section';
+import Notification from './Notification/Notification';
 import { useState } from 'react';
 
-export const App = () => {
+const App = () => {
   const [feedback, setFeedback] = useState({ good: 0, neutral: 0, bad: 0 });
 
   const total = Object.values(feedback).reduce((acc, value) => acc + value, 0);
@@ -43,3 +43,5 @@ export const App = () => {
     </div>
   );
 };
+
+export default App;

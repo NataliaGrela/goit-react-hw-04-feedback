@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const Feedback = ({ feedback }) => {
+const Feedback = ({ feedback }) => {
   const { good, neutral, bad } = feedback;
   const total = good + neutral + bad;
   const totalPositiveFeedback =
@@ -17,3 +17,5 @@ export const Feedback = ({ feedback }) => {
 Feedback.propTypes = {
   feedback: PropTypes.number.isRequired,
 };
+
+export default Feedback;

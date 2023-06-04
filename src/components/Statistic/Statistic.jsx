@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import { Feedback } from 'components/Feedback/Feedback';
+import Feedback from 'components/Feedback/Feedback';
 
-export const Statistic = ({ feedback }) => {
+const Statistic = ({ feedback }) => {
   return (
     <div>
       <h3>Statistic</h3>
@@ -16,3 +16,5 @@ export const Statistic = ({ feedback }) => {
 Statistic.propTypes = {
   feedback: PropTypes.number.isRequired,
 };
+
+export default Statistic;
